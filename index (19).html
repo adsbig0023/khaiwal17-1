@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Khaiwal Community</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #08090c;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 22px 12px;
+}
+
+.container {
+  max-width: 430px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 18px;
+  border: 1px solid #b99545;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #222017, #101115);
+  box-shadow: 0 0 30px #d0a84a18;
+}
+
+.profile {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  border: 3px solid #d7b35c;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+h1 {
+  color: #f2d17d;
+  font-size: 27px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+p {
+  color: #d0d0d0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.card {
+  margin-top: 18px;
+  padding: 23px 18px;
+  border: 1px solid #34302a;
+  border-radius: 16px;
+  background: #121317;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #f2d17d;
+}
+
+.join {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-top: 22px;
+  padding: 17px 10px;
+  border: 1px solid #40e89a;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  background: linear-gradient(
+    100deg,
+    #087d48,
+    #22df83,
+    #087d48
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #20dc8245;
+  animation: pulse 2s infinite;
+}
+
+.join::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  height: 100%;
+  width: 45%;
+  transform: skewX(-22deg);
+  background: #ffffff66;
+  animation: shine 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  to {
+    left: 150%;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    box-shadow: 0 0 27px #20dc8280;
+  }
+}
+
+.join:active {
+  transform: scale(0.98);
+}
+
+.note {
+  margin: 20px 8px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #929292;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  padding: 15px 0;
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 23px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .join {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .join,
+  .join::after {
+    animation: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <!-- Apni photo profile.jpg naam se upload karein -->
+    <img
+      class="profile"
+      src="profile.jpg"
+      alt="Community profile"
+      onerror="this.style.display='none'"
+    >
+
+    <h1>KHAIWAL COMMUNITY</h1>
+
+    <p>
+      Welcome to our official information community.
+      Join us on Telegram to connect with members
+      and receive general updates.
+    </p>
+
+  </section>
+
+  <!-- TELEGRAM JOIN SECTION -->
+  <section class="card">
+
+    <h2>Join Our Telegram Community</h2>
+
+    <p>
+      Connect with the community and receive
+      announcements and general information
+      through our Telegram channel.
+    </p>
+
+    <!-- Apna asli Telegram invite link yahan dalein -->
+    <a
+      class="join"
+      href="https://t.me/YOUR_TELEGRAM_LINK"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      JOIN TELEGRAM NOW
+    </a>
+
+  </section>
+
+  <!-- COMMUNITY GUIDELINES -->
+  <section class="card">
+
+    <h2>Community Guidelines</h2>
+
+    <p>
+      Follow applicable laws and community rules.
+      No financial returns or winnings are guaranteed.
+      Never share passwords or OTPs with strangers.
+    </p>
+
+  </section>
+
+  <div class="note">
+    18+ notice. For general information only.
+    Please follow applicable local laws.
+  </div>
+
+  <footer>
+    © 2026 Khaiwal Community
+  </footer>
+
+</div>
+
+</body>
+</html>
